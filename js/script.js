@@ -22,7 +22,7 @@
     }
     else if(playerInput == '3'){
         playerMove = 'nożyczki'
-    }
+    }   
     printMessage('Twój ruch to: ' + playerMove);
 
     if( computerMove == 'kamień' && playerMove == 'papier'){
@@ -39,9 +39,14 @@
     else if( randomNumber == playerInput){
         printMessage('Mamy Remis!');
     }
+    else if(playerMove == 'nieznany ruch'){
+        printMessage('Nie podałeś liczby z przedziału <1;3>! spróbuj ponownie po odświeżeniu strony.');
+    }
     else{
         printMessage('Niestety Przegrałeś :(');
     }
+
+    
 
 
     /*let randomNumer2 = Math.floor(Math.random() * 9 + 11);
