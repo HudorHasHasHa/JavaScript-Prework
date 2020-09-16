@@ -28,6 +28,5 @@ document.getElementById('play-rock').addEventListener('click', function(){
     playGame(3);
   });
 }
-
     /*let randomNumer2 = Math.floor(Math.random() * 9 + 11);
     printMessage('wynik działania:' + randomNumber2);*/
